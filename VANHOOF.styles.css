@@ -149,13 +149,13 @@ footer .icon{
 
 /* ----- HANDLE PREFERS REDUCED MOTION FOR THE ICON ANIMATIONS ----- */
 /* --------------- BEGIN USER PREFERS REDUCED MOTION QUERY --------------- */
-
+@media (prefers-reduced-motion) {
     @-webkit-keyframes icon-animation  {
         0% { font-variation-settings: "TIME" 1; }
     }
     @keyframes icon-animation {
         0% { font-variation-settings: "TIME" 1; }
-    }
+    }}
 /* --------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
 
 
@@ -206,6 +206,7 @@ section{
         margin: 0.75em 0.75em 0.75em 0;
         display: inline;
         float: left;
+        
     }
 }
 
@@ -241,6 +242,7 @@ section{
     img{
         width: 200px;
         max-width: 200px;
+        
     } 
 }
 
@@ -277,7 +279,11 @@ section{
     #seven{
         grid-column: 3/4;
         grid-row: 3/5;
-} }
+
+} 
+
+
+}
 /* --------------- END MEDIUM SCREEN SIZES --------------- */
 
 
@@ -324,10 +330,10 @@ section{
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
-    /* img{
-        width: 300px;
-        max-width: 300px;
-    } */
+     img{
+        width: auto;
+        max-width: 100%;
+    } 
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
 
 
