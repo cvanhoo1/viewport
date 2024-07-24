@@ -122,7 +122,7 @@ img{
 /* ----- ANIMATED ICON ----- */
 /* Icon and animation code from https://typogram.github.io/Anicons/ */
 .icon{
-    font-family: "Anicons Regular";
+    font-family: "Anicons Regular",sans-serif;
     font-size: 2em;
     display: inline-block;
     margin: 0 0.5em;
