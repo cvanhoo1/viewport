@@ -150,7 +150,7 @@ footer .icon{
 /* ----- HANDLE PREFERS REDUCED MOTION FOR THE ICON ANIMATIONS ----- */
 /* --------------- BEGIN USER PREFERS REDUCED MOTION QUERY --------------- */
 
-    @-webkit-keyframes icon-animation {
+    @-webkit-keyframes icon-animation  {
         0% { font-variation-settings: "TIME" 1; }
     }
     @keyframes icon-animation {
@@ -190,27 +190,33 @@ section{
 }
 
 /* ---------- EXTRA SMALL SCREEN STYLES ---------- */
-
-header, footer{
-    background-color: var(--pink);
-    color: var(--white);
+@media screen and (max-width:600px){
+    
+    header, footer{
+        background-color: var(--pink);
+        color: var(--white);
+    }
+    
+    section{
+        background-color: var(--red);
+        color: var(--light-gray);
+    }
+    
+    img{
+        margin: 0.75em 0.75em 0.75em 0;
+        display: inline;
+        float: left;
+    }
 }
 
-section{
-    background-color: var(--red);
-    color: var(--light-gray);
-}
-
-img{
-    margin: 0.75em 0.75em 0.75em 0;
-    display: inline;
-    float: left;
-}
 
 
 /* ---------- SMALL SCREEN STYLES ---------- */
 /* --------------- BEGIN SMALL SCREEN SIZES --------------- */
-    /* header, footer{
+
+@media screen and (min-width:600px){
+
+    header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
     }
@@ -235,14 +241,18 @@ img{
     img{
         width: 200px;
         max-width: 200px;
-    } */
+    } 
+}
+
 /* --------------- END SMALL SCREEN SIZES --------------- */
 
 
 
 /* ---------- MEDIUM SCREEN STYLES ---------- */
 /* --------------- BEGIN MEDIUM SCREEN SIZES --------------- */
-    /* header, footer{
+@media screen and (min-width:768px){
+
+    header, footer{
         background-color: var(--black);
         color: var(--white);
     }   
@@ -267,14 +277,16 @@ img{
     #seven{
         grid-column: 3/4;
         grid-row: 3/5;
-    } */
+} }
 /* --------------- END MEDIUM SCREEN SIZES --------------- */
 
 
 
 /* ---------- LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN LARGE SCREEN SIZES --------------- */
-    /* header, footer{
+@media screen and (min-width:992px){
+
+     header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
     }
@@ -305,7 +317,7 @@ img{
 
     #seven, #eight{
         grid-row: 3/4;
-    } */
+} }
 /* --------------- END LARGE SCREEN SIZES --------------- */
 
 
@@ -322,7 +334,8 @@ img{
 
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN EXTRA LARGE SCREEN SIZES --------------- */
-    /* header, footer{
+@media screen and (min-width:1200px){
+    header, footer{
         background-color: var(--orange);
         padding-left: 5%;
     }
@@ -387,5 +400,5 @@ img{
 
     #three p, #four p, #five p, #six p{
         padding-top: 2em;
-    } */
+} }
 /* --------------- END EXTRA LARGE SCREEN SIZES --------------- */
